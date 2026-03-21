@@ -1,7 +1,7 @@
 # 1. PODSTAWOWA KONFIGURACJA
 # Zmień na https://jasiecki.com/ dopiero PO przepięciu domen u rejestratora
 baseURL = "https://jasiecki.com/"
-languageCode = "pl-pl"
+languageCode = "en-us"
 title = "Łukasz Jasiecki - Dynamics 365"
 theme = "PaperMod"
 
@@ -19,34 +19,31 @@ theme = "PaperMod"
 # 4. MENU NAWIGACYJNE
 [[menu.main]]
     identifier = "posts"
-    name = "Artykuły"
+    name = "Posts"
     url = "/posts/"
     weight = 10
 
-[[menu.main]]
-    identifier = "categories"
-    name = "Kategorie"
-    url = "/categories/"
-    weight = 20
+#[[menu.main]]
+#    identifier = "categories"
+#   name = "Kategorie"
+#    url = "/categories/"
+#    weight = 20
 
-# 5. PARAMETRY MOTYWU PAPERMOD
+# 5. PAPERMOD THEME PARAMETERS
 [params]
     env = "production"
-    description = "Blog o Dynamics 365 i technologiach Azure"
+    description = "Blog about Dynamics 365 and Azure technologies"
     author = "Łukasz Jasiecki"
     
-    # Wygląd strony głównej
+    # Home page appearance
     [params.homeInfoParams]
-        Title = "Witaj na moim blogu! 👋"
-        Content = "Piszę o wdrożeniach Dynamics 365, Azure i integracjach systemowych."
+        Title = "Welcome to my blog!"
+        Content = "I write about Dynamics 365 implementations, Azure, and system integrations."
 
     # Ikony społecznościowe (opcjonalnie)
     [[params.socialIcons]]
         name = "linkedin"
-        url = "https://linkedin.com/in/lukaszjasiecki"
-    [[params.socialIcons]]
-        name = "github"
-        url = "https://github.com/lukaszjasiecki"
+        url = "https://www.linkedin.com/in/lukaszjasiecki32"
 
     # Ustawienia artykułów
     ShowReadingTime = true
