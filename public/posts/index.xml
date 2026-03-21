@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on My New Hugo Project</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on My New Hugo Project</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integrations monitoring with Application Insights</title>
+      <link>http://localhost:1313/posts/integrations-monitoring-with-application-insights/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/integrations-monitoring-with-application-insights/</guid>
+      <description>&lt;p&gt;Every Dynamics 365 implementation involves connections to other systems, utilizing technologies such as oData and custom web services. However, Dynamics 365 lacks built-in functionality to monitor outgoing or incoming requests, leaving no out-of-the-box solution for monitoring or alerts.&lt;/p&gt;
+&lt;p&gt;Application Insights, a feature of Azure Monitor, enables monitoring for web applications like D365. To integrate Application Insights, we also need Azure &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts&#34;&gt;API Management (APIM)&lt;/a&gt;, which acts as a gateway for routing requests to Dynamics 365.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logic App &#43; Recurring Integration – How do I import data from an external data source?</title>
+      <link>http://localhost:1313/posts/logic-app-recurring-integration/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/logic-app-recurring-integration/</guid>
+      <description>&lt;p&gt;There are many ways to import data from external systems into Dynamics 365. One that I prefer is to import data using Recurring Integration. I won&amp;rsquo;t describe how to configure Recurring Integration in detail. You can find many articles on this – for example, &lt;a href=&#34;https://www.atomicax.com/blog-entry/how-use-recurring-integration-endpoint-import-data&#34;&gt;this one from the atomicax.com blog.&lt;/a&gt;
+I will present how to create an Azure Logic app and configure the mechanism for importing data.&lt;/p&gt;
+&lt;p&gt;In my scenario, I will put data into an Azure SQL table – it could also be a local SQL Server or another source that the Logic App connector could read data from.
+I will read this data using the stored procedure and send it to Dynamics 365 using an HTTP request. Let&amp;rsquo;s look at this solution in detail.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Printing labels via an external service</title>
+      <link>http://localhost:1313/posts/printing-labels-via-an-external-service/</link>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/printing-labels-via-an-external-service/</guid>
+      <description>&lt;p&gt;In one of the last Tech Talks, we can watch how to print warehouse labels via an external service (cloud label printing).&lt;/p&gt;
+&lt;p&gt;The Microsoft engineers also presented that it is possible to print labels from the cloud Dynamics 365 F&amp;amp;O in the on-premises software such as BarTender or NiceLabel in many ways but the official documentation doesn&amp;rsquo;t show this in detail.
+Link to the TechTalk video: &lt;a href=&#34;https://www.youtube.com/watch?v=DuUcwo5ufdo&amp;amp;t=2479s&#34;&gt;Beyond the DRA Cloud Label Printing for Dynamics 365 Supply Chain Management | TechTalk&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure App Service hybrid connection</title>
+      <link>http://localhost:1313/posts/azure-appservice-hybrid-connection/</link>
+      <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/azure-appservice-hybrid-connection/</guid>
+      <description>&lt;p&gt;In my very first post, I would like to talk about Azure App Service Hybrid Connection.&lt;/p&gt;
+&lt;p&gt;During Dynamics 365 implementation, we usually have to design and develop many integrations. The integrations are various – web services, importing data from sources such as SQL databases using e.g. Recurring Integration, or Odata.
+The technologies are different, but so are the services we need to connect to. If they are exposed &amp;ldquo;to the world&amp;rdquo; then establishing communication with cloud-based D365 should not be a major problem.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
