@@ -1,14 +1,14 @@
 # 1. PODSTAWOWA KONFIGURACJA
 # Zmień na https://jasiecki.com/ dopiero PO przepięciu domen u rejestratora
-baseURL = "https://lukaszjasiecki.github.io/jasiecki.com/"
+baseURL = "https://jasiecki.com/"
 languageCode = "pl-pl"
 title = "Łukasz Jasiecki - Dynamics 365"
 theme = "PaperMod"
 
 # 2. NAPRAWA ŚCIEŻEK (OBRAZKI I STYLE)
 # Te opcje pomagają, gdy strona jest w podfolderze na GitHubie
-canonifyURLs = true
-relativeURLs = true
+#canonifyURLs = true
+#relativeURLs = true
 
 # 3. KONFIGURACJA TREŚCI
 [taxonomies]
