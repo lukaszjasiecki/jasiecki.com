@@ -56,9 +56,7 @@ relativeURLs = true
     ShowCodeCopyButtons = true
     
     # Optymalizacja pod obrazki
-    [params.images]
-        # To musi pasować do Twojej ścieżki w 'static/images/'
-        default_image = "/images/2024/05/HC_Title.jpg"
+    images = ["/images/2024/05/HC_Title.jpg"]
 
 # 6. KONFIGURACJA SYNTATYKI KODU (Ważne dla Dynamics/Azure)
 [markup]
