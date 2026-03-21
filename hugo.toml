@@ -1,4 +1,67 @@
-baseURL = 'https://lukaszjasiecki.github.io/jasiecki.com/'
-languageCode = 'en-us'
-title = 'jasiecki.com'
+# 1. PODSTAWOWA KONFIGURACJA
+# Zmień na https://jasiecki.com/ dopiero PO przepięciu domen u rejestratora
+baseURL = "https://lukaszjasiecki.github.io/jasiecki.com/"
+languageCode = "pl-pl"
+title = "Łukasz Jasiecki - Dynamics 365"
 theme = "PaperMod"
+
+# 2. NAPRAWA ŚCIEŻEK (OBRAZKI I STYLE)
+# Te opcje pomagają, gdy strona jest w podfolderze na GitHubie
+canonifyURLs = true
+relativeURLs = true
+
+# 3. KONFIGURACJA TREŚCI
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+    series = "series"
+
+# 4. MENU NAWIGACYJNE
+[[menu.main]]
+    identifier = "posts"
+    name = "Artykuły"
+    url = "/posts/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "categories"
+    name = "Kategorie"
+    url = "/categories/"
+    weight = 20
+
+# 5. PARAMETRY MOTYWU PAPERMOD
+[params]
+    env = "production"
+    description = "Blog o Dynamics 365 i technologiach Azure"
+    author = "Łukasz Jasiecki"
+    
+    # Wygląd strony głównej
+    [params.homeInfoParams]
+        Title = "Witaj na moim blogu! 👋"
+        Content = "Piszę o wdrożeniach Dynamics 365, Azure i integracjach systemowych."
+
+    # Ikony społecznościowe (opcjonalnie)
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://linkedin.com/in/lukaszjasiecki"
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/lukaszjasiecki"
+
+    # Ustawienia artykułów
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    
+    # Optymalizacja pod obrazki
+    [params.images]
+        # To musi pasować do Twojej ścieżki w 'static/images/'
+        default_image = "/images/2024/05/HC_Title.jpg"
+
+# 6. KONFIGURACJA SYNTATYKI KODU (Ważne dla Dynamics/Azure)
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = "monokai" # Styl kolorowania kodu
